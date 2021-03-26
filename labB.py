@@ -7,7 +7,7 @@
 # Program created at: 2021/26.03
 
 #1. Define n and sort out its usage
-#2. Write validation function (negative also)
+#2. Write validation function (negative also), add it to every input
 
 
 def findFibonacci(n):
@@ -68,8 +68,12 @@ while repeatExec:
     print(exerciseTwo())
 
     count(int(input("Enter 1 to continue or 0 to quit \n"))) #Add validation somehow
+    # print("Enter 1 to continue or 0 to quit \n")
+
     if count == 0:
         repeatExec = False
+        # repeatExec = getInput()
+
         break
     else:
         repeatExec = True
